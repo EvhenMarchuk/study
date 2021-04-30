@@ -28,7 +28,6 @@ class Category(models.Model):
         return url
 
 
-
 class Article(models.Model):
     title = models.CharField(u'Заголовок', max_length=250, help_text=u'Максимум 250 символів')
     description = models.TextField(blank=True, verbose_name=u'Опис')

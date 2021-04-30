@@ -1,8 +1,7 @@
 # app_blog /views.py
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DateDetailView
-from .models import Article
-from .models import Category
+from .models import Article, Category
 
 class HomePageView(ListView):
     model = Article
